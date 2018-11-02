@@ -1,18 +1,23 @@
 # book-store
 > 这是一个基于Vue全家桶开发的图书管理系统WebApp
 ```
-技术栈 es6+less+axios+vue2+vuex+bootstrap
+## 技术栈：
+> es6+less+axios+vue2+vuex+bootstrap
 ```
+ ## 在线预览DEMO(推荐使用Chrome浏览器手机调试模式观看)
+   [知乎日报DEMO](http://47.106.107.188:8000/home)
 
  ## 项目截图
   ### 首页
-  ![首页](https://github.com/spBlueCat/zhihu-daily/blob/master/screenshots/index.png)
-  ### 过往新闻
-  ![过往新闻](https://github.com/spBlueCat/zhihu-daily/blob/master/screenshots/before-news.png)
-  ### 新闻详情页
-  ![新闻详情页](https://github.com/spBlueCat/zhihu-daily/blob/master/screenshots/detail.png)
-  ### 侧边栏(由于知乎日报近期改版，因此侧边栏列没有列表项)
-  ![侧边栏](https://github.com/spBlueCat/zhihu-daily/blob/master/screenshots/sidebar.png)
+  ![首页](https://github.com/spBlueCat/books-store/blob/master/screenshots/index.png)
+  ### 列表页
+  ![首页](https://github.com/spBlueCat/books-store/blob/master/screenshots/book-list.png)
+  ### 详情页(点击列表项进入详情页)
+  ![详情页](https://github.com/spBlueCat/books-store/blob/master/screenshots/details.png)
+  ### 收藏页
+  ![首页](https://github.com/spBlueCat/books-store/blob/master/screenshots/collect.png)
+  ### 添加商品
+  ![添加商品](https://github.com/spBlueCat/books-store/blob/master/screenshots/add.png)
 
 
 ## 目录结构
@@ -20,8 +25,17 @@
 .
 |-- build					// webpack配置文件
 |-- config					// 项目打包路径
-|-- mock         //项目部署文件，放在服务器即可正常访问
-|-- src          // 源码目录
+|-- mock         // 项目部署文件，放在服务器即可正常访问
+|-- src          // api文件目录
+|	|-- api	        // api目录
+|	|	|-- index.js    // api文件
+|	|-- assets	        // 资源目录
+|	|-- components	    // 组件目录
+|	|-- base	          // 基础组件目录
+|	|-- router	         // 路由文件目录
+|	|-- store	          // vuex文件目录
+|	|-- App.vue				// 页面入口文件
+|	|-- main.js				// 程序入口文件，加载各种公共组件
 |-- .babelrc					// ES6语法编译配置
 |-- .editorconfig				// 代码编写规格配置
 |-- .postcssrc.js
@@ -31,42 +45,4 @@
 |-- README.md					// readme说明
 .
 ```
-
-.
-├── README.md
-├── mock  //启动文件配置目录
-│   ├──book.json
-│   ├──express-server.js
-│   ├──index.html
-│   ├──package.json
-│   ├──package-lock.json
-│   ├──server.js
-│   └──slider.js
-├── src
-│   ├──api
-     │   ├──index.js
-│   ├──assets
-     │   ├──logo.png
-│   ├──base
-     │   ├──Loading.vue
-     │   ├──MHeader.vue
-     │   ├──Swiper.vue
-     │   └──Tab.vue
-│   ├──components
-     │   ├──Add.vue
-     │   ├──Collect.vue
-     │   ├──Detail.vue
-     │   ├──Home.vue
-     │   └──List.vue
-│   ├──router
-     │   └──index.js
-│   ├──store
-     │   ├──getter.js
-     │   ├──index.js
-     │   ├──mutations.js
-     │   └──mutations-type.js
-│   ├──App.vue  //根组件
-│   └──main.js
-├── index.html
-└── static
 
