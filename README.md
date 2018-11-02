@@ -5,7 +5,7 @@
 > es6+less+axios+vue2+vuex+bootstrap
 ```
  ## 在线预览DEMO(推荐使用Chrome浏览器手机调试模式观看)
-   [知乎日报DEMO](http://47.106.107.188:8000/home)
+   [书城DEMO](http://47.106.107.188:8000/home)
 
  ## 项目截图
   ### 首页
